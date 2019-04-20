@@ -6,6 +6,6 @@ def reverse_each_string(string)
     new_string << word.reverse
   end
 
-  return word_arr
+  return new_string
 end
 
