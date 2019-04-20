@@ -1,14 +1,11 @@
-def reverse_each_word(string)
+def reverse_each_string(string)
   new_string = ""
   word_arr = string.split(" ")
-  
-  word_arr.each_with_index do |word, i|
-  if i <= word_arr.size - 2
-    new_string << word.reverse
-    new_string += " "
-  else
+
+  word_arr.collect do |word|
     new_string << word.reverse
   end
-  end
-  return new_string
+
+  return word_arr
 end
+
